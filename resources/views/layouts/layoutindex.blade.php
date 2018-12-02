@@ -28,7 +28,7 @@
                 <ul class="nav navbar-nav navbar-right">
                 </ul>
             </div>
-          </div>
+          {{Config::get('defaultcfg.defaultcfg.M3DC_LOG_TXT')}}</div>
         </nav>
         <div style="margin-bottom: 100px"></div>
      </header>

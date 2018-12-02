@@ -10,4 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', '');
+Route::get('/', 'InputController@index');
+Route::post('/', 'InputController@store');
+
+Route::get('viewpage', 'InputController@displayview');
