@@ -17,7 +17,7 @@
 
                     </div>
                     <div class="panel-footer">
-                        <p class="glyphicon glyphicon-warning-sign text-danger">　PCでご視聴の場合はVPNを切断しご覧ください</p>
+                        <p class="glyphicon glyphicon-warning-sign text-danger">ご視聴の場合はVPNを切断しご覧ください</p>
                     </div>
                 </div>
 
