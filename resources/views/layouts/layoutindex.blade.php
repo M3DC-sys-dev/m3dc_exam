@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+  <title>{{$title}}</title>
+
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ asset('/css/style.css') }}">
 	<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
@@ -21,7 +23,7 @@
 	<header>
          <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header">{{$logo}}
             </div>
 
             <div id="patern03" class="collapse navbar-collapse">
