@@ -14,6 +14,7 @@ class InputController extends Controller
         $data["title"]         = config('defaultcfg.defaultcfg.PAGE_TITLE');
         $data["logo"]          = config('defaultcfg.defaultcfg.M3DC_LOG_TXT');
         $data["seminar_title"] = config('defaultcfg.defaultcfg.M3DC_SEMINAR_TITLE');
+        $data["input_title"]   = config('defaultcfg.defaultcfg.INPUT_TITLE');
         $data["date_time"]     = config('defaultcfg.defaultcfg.SEMI_INFO_DATE');
         $data["subject"]       = config('defaultcfg.defaultcfg.SEMI_INFO_TITLE');
         $data["speaker"]       = config('defaultcfg.defaultcfg.SEMI_INFO_PROF');
@@ -30,7 +31,7 @@ class InputController extends Controller
         $viewcnt = 0;
 
         //表示データ取得
-        $data["title"]         = config('defaultcfg.defaultcfg.INPUT_TITLE');
+        $data["title"]         = config('defaultcfg.defaultcfg.PAGE_TITLE');
         $data["logo"]          = config('defaultcfg.defaultcfg.M3DC_LOG_TXT');
         $data["seminar_title"] = config('defaultcfg.defaultcfg.M3DC_SEMINAR_TITLE');
         $data["info_date"]     = config('defaultcfg.defaultcfg.VIEW_INFO_DATE');

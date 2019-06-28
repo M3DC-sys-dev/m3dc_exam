@@ -32,7 +32,7 @@
                 	<div class="row">
                         <div class="description col-xs-12  col-md-12">
                             <div class="panel panel-primary">
-                            	<div class="panel-heading"></div>
+                            	<div class="panel-heading">{{$input_title}}</div>
                         		<div class="panel-body">
 
                         			<form id="nameForm" class="form-horizontal" role="form" method="post" action="./viewpage">
