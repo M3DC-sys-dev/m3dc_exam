@@ -11,8 +11,10 @@ class InputController extends Controller
         return view('viewpages.input');
     }
     
-    public function displayview()
+    public function displayview(Request $request)
     {
+
+
         return view('viewpages.viewpage');
     }
 }
