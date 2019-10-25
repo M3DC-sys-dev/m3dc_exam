@@ -40,7 +40,7 @@
                         		<div class="panel-body">
 
                         			<form id="nameForm" class="form-horizontal" role="form" method="post" action="/viewpage">
-										<input type="hidden" name="_token" value="{{ csrf_token() }}">
+										{{ csrf_field() }}
                             			<div class="form-group">
                             				<label class="col-md-2 control-label" >都道府県</label>
 											<div class="col-md-4">
