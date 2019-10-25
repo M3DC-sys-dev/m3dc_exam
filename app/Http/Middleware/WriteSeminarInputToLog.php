@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class WriteSeminarInputToLog
 {
@@ -24,8 +24,11 @@ class WriteSeminarInputToLog
         $referer = $request->server('HTTP_REFERER');
         $usr_agent = $request->server('HTTP_USER_AGENT');
 
-        Log::channel('seminar')
-            ->info("$todohuken,$sei,$mei,$ninzu,$ip,$referer,$usr_agent");
+        $fileDateTime = date('Y_m_d_H:i:s');
+        $currentDateTime = date('Y-m-d H:i:s');
+
+        Storage::disk('seminar_logs')
+            ->put("$fileDateTime.log", "$currentDateTime,$todohuken,$sei,$mei,$ninzu,$ip,$referer,$usr_agent\n");
 
         return $next($request);
     }
