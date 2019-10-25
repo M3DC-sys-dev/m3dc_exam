@@ -27,6 +27,8 @@ class WriteSeminarInputToLog
         $fileDateTime = date('Y_m_d_H:i:s');
         $currentDateTime = date('Y-m-d H:i:s');
 
+        // /storage/app/logsにログを書きます
+        // 'seminal_logs'の場所はconfig/filesystems.phpで設定されています
         Storage::disk('seminar_logs')
             ->put("$fileDateTime.log", "$currentDateTime,$todohuken,$sei,$mei,$ninzu,$ip,$referer,$usr_agent\n");
 

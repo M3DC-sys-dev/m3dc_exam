@@ -20,6 +20,8 @@ class WriteSeminarInputToDB
         
         $input->crnt_date = date('Y-m-d H:i:s');
         $input->todohuken = $request->todohuken;
+        // 英語の場合、fnameは「名」で、lnameは「姓」はずだと思いますが、
+        // こちらで日本名前の習慣に従います（「姓　名」になります）
         $input->fname = $request->sei;
         $input->lname = $request->mei;
         $input->viewcnt = $request->ninzu;

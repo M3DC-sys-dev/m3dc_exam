@@ -8,6 +8,7 @@ class InputController extends Controller
 {
     public function __construct()
     {
+        // データ記入ミドルウェアはデータを受けるviewpageのみ有効化になります
         $this->middleware('seminarInputToLog')->only('displayview');
         $this->middleware('seminarInputToDB')->only('displayview');
     }

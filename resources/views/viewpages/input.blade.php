@@ -42,6 +42,7 @@
                         			<form id="nameForm" class="form-horizontal" role="form" method="post" action="/viewpage">
 										{{ csrf_field() }}
                             			<div class="form-group">
+											<!-- 都道府県データはdefaultcfg/todohuken.phpに記入されています -->
                             				<label class="col-md-2 control-label" >都道府県</label>
 											<div class="col-md-4">
 												<select name="todohuken" id="todohuken" class="form-control">
