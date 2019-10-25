@@ -56,5 +56,8 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+        'seminarInputToLog' => \App\Http\Middleware\WriteSeminarInputToLog::class,
+        'seminarInputToDB' => \App\Http\Middleware\WriteSeminarInputToDB::class,
     ];
 }
