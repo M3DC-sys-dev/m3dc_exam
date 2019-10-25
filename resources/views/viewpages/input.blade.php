@@ -66,7 +66,7 @@
                             			<div class="form-group">
 											<label class="col-md-2 control-label" >参加人数</label>
 											<div class="col-md-4">
-												<input class="form-control" id="ninzu" type="number" name="ninzu">
+												<input class="form-control" id="ninzu" type="number" name="ninzu" min="1">
 											</div>
 										</div>
 
