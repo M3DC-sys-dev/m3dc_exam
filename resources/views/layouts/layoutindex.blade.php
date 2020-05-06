@@ -15,13 +15,15 @@
 	<script src="{{asset('js/jquery.validate.min.js')}}"></script>
 	<script src="{{asset('js/util-ui.js')}}"></script>
 
+	<title>{{ $title }}</title>
 </head>
 
 <body>
 	<header>
          <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-brand">
+			{{ $logo_brand }}
             </div>
 
             <div id="patern03" class="collapse navbar-collapse">

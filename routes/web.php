@@ -11,5 +11,6 @@
 |
 */
 # Route::get('/', '');
+Route::get('/', 'InputController@index');
 Route::post('/', 'InputController@index');
 Route::get('/viewpage', 'InputController@displayview');

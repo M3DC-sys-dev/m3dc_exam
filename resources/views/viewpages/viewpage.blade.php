@@ -7,12 +7,15 @@
 
         	<div class="pageWrap">
                 <div class="panel panel-primary">
-                    <div class="panel-heading text-center"></div>
+                    <div class="panel-heading text-center">{{ $panel_title }}</div>
                     <div class="panel-body">
-                        <pre class="list-unstyled "></pre>
-
-                        <div>
-                        	<!-- iframe コード入力 -->
+						<pre class="list-unstyled">
+{{ $semi_info['date'] }}
+{{ $semi_info['title'] }}
+{{ $semi_info['prof'] }}</pre>
+                        <div class="text-center">
+							<iframe src="./img/m3dc_logo.png" width="490" height="533" scrolling="no">
+							</iframe>
                         </div>
 
                     </div>
@@ -22,7 +25,7 @@
                 </div>
 
                 <div class="col-sm-12 contactBox">
-                	<a target="_blank" href="">接続に関する技術的な質問等ございましたら、こちらからお問い合わせ下さい。</a>
+                	<a target="_blank" href="{{ $inquiry_url }}">接続に関する技術的な質問等ございましたら、こちらからお問い合わせ下さい。</a>
             	</div>
 	        </div>
 
